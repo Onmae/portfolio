@@ -8,8 +8,8 @@
     <meta name="description" content="Portfolio for world-renowned software engineer Seungwoo">
     <meta name="author" content="Son Seung Woo">
     <link rel="icon" type="image/png" href="imgs/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
@@ -20,6 +20,10 @@
             <img src="imgs/favicon.png" width="70" height="70" alt="logo">
         </div>
         <div class="navbar__menu">
+            <div class="navbar__menu__item active">
+                <span>Home</span>
+            </div>
+
             <div class="navbar__menu__item">
                 <span>About</span>
             </div>
@@ -43,20 +47,20 @@
 
     </nav>
     <section id="home">
-        <div class="home__avatar">
-            <img src="imgs/avatar.jpg">
-        </div>
         <h1 class="home__title">
             Hello,<br />
             I'm Seung woo
-        </h1>
-        <h2 class="home__context">Aspiring Software Engineer</h2>
+        </h1>xmlns
+        <h3 class="home__context">Aspiring Software Engineer</h3>
         <div class="home__contact">
-            <span>CONTACT ME</span>
+            <span>Contact me  ></span>
+        </div>        
+        <div class="home__avatar">
+            <img src="imgs/avatar.jpg" alt="">
         </div>
     </section>
 
-    <section id="about">>
+    <section id="about" class="division">
         <h1 class="about__title">About me</h1>
         <h3 class="about__context">
             저는 새로운 기술에 관심이 많고 끊임없이 생각하며 문제 해결을 즐기는 개발자입니다.
@@ -93,7 +97,7 @@
         </div>
 
     </section>
-    <section class="skills">
+    <section class="skills" class="division">
         <h1 class="skills__title">Skills</h1>
         <h2 class="skills__context">Skills & Attributes</h2>
         <p>소프트웨어 라이프사이클의 대부분에 경험이 있습니다. 새로운 기술을 배우려는 열정이 많습니다.
@@ -178,7 +182,7 @@
 
         </div>
     </section>
-    <section class="work">
+    <section class="work" class="division">
         <h1>My Work</h1>
         <h3>Projects</h3>
 
@@ -194,7 +198,7 @@
             <img src="imgs/~~" alt="">
         </div>
     </section>
-    <section class="testimonials">
+    <section class="testimonials" class="division">
         <h1>Testimonials</h1>
         <h3>See What they say about me</h3>
         <div class="people">
@@ -206,7 +210,7 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" class="division">
             <h1>Let's Talk</h1>
             <h3>gaonmae@gmail.com</h3>
             <a href="">
