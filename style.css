@@ -1,4 +1,6 @@
 @import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Serif+KR:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
 :root {
   /* font size*/
@@ -18,7 +20,6 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
 }
 
 /* Typography */
@@ -48,14 +49,13 @@ p {
   font-weight: var(--weight-regular);
   color: black;
   margin: 4px 0px;
+  line-height: 150%;
+  padding: 20px;
 }
 
 body {
   width: 100vw;
-}
-
-.division {
-  margin-top: 80px;
+  font-family: "Noto Serif KR", "Open Sans", sans-serif;
 }
 
 #navbar {
@@ -90,6 +90,7 @@ body {
   margin-right: 20%;
   cursor: pointer;
   border-radius: var(--size-border-radius);
+  white-space: nowrap;
 }
 
 .navbar__menu__item span {
@@ -157,7 +158,7 @@ body {
 .home__contact span:hover {
   background-color: white;
   color: black;
-  transition: all ease-in-out 0.5s;
+  transition: all 0.5s ease-in-out;
 }
 
 @media (max-width: 1023px) {
@@ -170,4 +171,45 @@ body {
 }
 
 @media (max-width: 850px) {
+}
+
+.division {
+  padding: 50px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.stack {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.stack__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  margin: auto;
+  color: tomato;
+  font-size: 70px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.stack__icon i {
+  transition: all 0.7s ease-in-out;
+}
+
+.stack__icon:hover i {
+  color: skyblue;
+  transform: rotate(360deg);
+}
+
+.stack__title {
+  padding: 10px;
+}
+
+.stack__context {
+  color: darkgrey;
 }
