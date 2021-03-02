@@ -45,7 +45,7 @@ h3 {
 }
 
 p {
-  font-size: var(--font-regular);
+  font-size: var(--font-small);
   font-weight: var(--weight-regular);
   color: black;
   margin: 4px 0px;
@@ -416,5 +416,41 @@ body {
   font-size: var(--font-small);
   text-align: left;
   padding: 0px;
+  opacity: 0.7;
+}
+
+#contact {
+  background-color: black;
+  text-align: center;
+  padding: 10px;
+}
+
+.contact__title,
+.contact__email,
+.contact__links,
+.contact__rights {
+  color: white;
+}
+
+.contact__title {
+  margin: 32px 0;
+}
+
+.contact__links {
+  font-size: var(--font-large);
+  margin: 24px 0;
+  opacity: 0.8;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact__links a svg {
+  fill: white;
+}
+
+.contact__links a svg:hover {
+  transform: scale(1.1);
+}
+
+.contact__rights {
   opacity: 0.7;
 }
