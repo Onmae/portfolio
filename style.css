@@ -71,11 +71,16 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 15px;
+  padding-top: 25px;
   padding-bottom: 7px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   background: #ffffff;
   line-height: 1;
+  transition: all 0.4s ease-in-out;
+}
+
+#navbar.navbar__scrolling {
+  padding-top: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .logo {
