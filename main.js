@@ -30,6 +30,22 @@ contactMe.addEventListener('click', () => {
     scrollIntoView('#contact');
 });
 
+// Show 'arrow up" button
+const arrowUp = document.querySelector('.arrow-up');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', ()=> {
+    if (window.scrollY > homeHeight / 2 ) {
+        arrowUp.classList.add('visible');
+    } else {
+        arrowUp.classList.remove('visible');
+    }
+});
+
+// Go Home when clicking 'arrow up'
+arrowUp.addEventListener('click', () =>{
+    scrollIntoView('#home');
+});
+
 function scrollIntoView(selecctor) {
     const scrollTo = document.querySelector(selecctor);
     scrollTo.scrollIntoView( {behavior: 'smooth'});
