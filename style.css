@@ -128,7 +128,7 @@ body {
 
 .navbar__toggle-btn {
   position: absolute;
-  top: 38px;
+  top: 33px;
   right: 32px;
   font-size: 24px;
   opacity: 0.3;
@@ -136,14 +136,13 @@ body {
 }
 
 #home {
-  margin-top: 50px;
+  margin-top: 180px;
   text-align: center;
 }
 
 .home__avatar {
   text-align: centers;
   width: 100%;
-  height: 350px;
 }
 
 .home__avatar img {
@@ -291,6 +290,22 @@ body {
   font-size: var(--font-regular);
   padding: 8px 48px;
   background-color: white;
+  position: relative;
+}
+
+.category__count {
+  background-color: lightslategray;
+  border-radius: 50%;
+  color: white;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  line-height: 24px;
+  position: absolute;
+  top: -20px;
+  right: 16px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
 
 .category__btn.active,
@@ -302,22 +317,7 @@ body {
 .category__btn.active .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
-  top: 0;
-}
-
-.category__count {
-  background-color: lightslategray;
-  border-radius: 50%;
-  color: white;
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  line-height: 24px;
-  position: relative;
-  top: -20px;
-  left: 4px;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
+  top: 5px;
 }
 
 .work__projects {
@@ -462,6 +462,7 @@ body {
 
 .contact__links a svg:hover {
   transform: scale(1.1);
+  fill: yellow;
 }
 
 .contact__rights {
@@ -501,13 +502,39 @@ body {
 }
 
 @media (max-width: 768px) {
+  :root {
+    /* font size*/
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
   .navbar__toggle-btn {
     display: block;
   }
+
+  .division {
+    padding-top: 70px;
+    padding-bottom: 16px;
+  }
+
   #navbar {
+    padding-top: 16px;
     flex-direction: column;
     align-items: flex-start;
   }
+
+  #navbar:not(.navbar__scrolling) .logo {
+    position: relative;
+    top: -5px;
+  }
+
+  .navbar__scrolling .logo {
+    position: relative;
+    top: 2px;
+  }
+
   .navbar__menu {
     flex-direction: column;
     text-align: center;
@@ -523,6 +550,10 @@ body {
   .navbar__menu__item {
     margin-bottom: 10px;
   }
+
+  #home {
+    margin-top: 30px;
+  }
   .stacks {
     flex-direction: column;
   }
@@ -535,11 +566,25 @@ body {
   .etc {
     margin-bottom: 38px;
   }
+
+  .category__btn {
+    margin: 4px 0;
+    width: 100%;
+  }
   .project {
     flex-grow: 1;
   }
 
   .person {
     flex-grow: 1;
+  }
+
+  .arrow-up {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    right: 16px;
+    bottom: 16px;
   }
 }
