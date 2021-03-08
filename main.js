@@ -11,8 +11,9 @@ document.addEventListener('scroll', () => {
     }
 });
 
+
 // Handle scrolling when tapping navbar menu
-const navbarMenu = document.querySelector('#navbar');
+const navbarMenu = document.querySelector('.navbar__menu');
 console.log(navbarMenu);
 navbarMenu.addEventListener('click', (event) => {
     const target = event.target;
@@ -20,9 +21,18 @@ navbarMenu.addEventListener('click', (event) => {
     if (link == null) {
         return;
     }
+    navbarMenu.classList.remove('open');
 
     scrollIntoView(link);
 });
+
+
+//Navbar toggle button for phone screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
+});
+
 
 // scrolling when tapping contact me
 const contactMe = document.querySelector('.home__contact span');

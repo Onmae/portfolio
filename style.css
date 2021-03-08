@@ -379,9 +379,9 @@ body {
   display: block;
   position: relative;
   left: 50%;
-  width: 30px;
+  width: 100px;
   height: 2px;
-  margin-left: -17px;
+  margin-left: -50px;
   margin-top: 8px;
   background-color: dimgrey;
 }
@@ -515,6 +515,11 @@ body {
     margin: auto;
     display: none;
   }
+
+  .navbar__menu.open {
+    display: block;
+  }
+
   .navbar__menu__item {
     margin-bottom: 10px;
   }
