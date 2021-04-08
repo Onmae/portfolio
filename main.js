@@ -57,32 +57,56 @@ arrowUp.addEventListener('click', () =>{
 const workBtnContainer = document.querySelector('.work__category');
 const projectsContainer = document.querySelector('.work__projects');
 const projects = document.querySelectorAll('.project');
-workBtnContainer.addEventListener('click', (e) => {
-    const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
-    if(filter == null) {
-        return;
-    }
 
-    //Remove selection and set new
+
+function loadProjects() {
+    return fetch('data/data.json')
+    .then(response => response.json())
+    .then(json => json.projects);
+}
+
+function displayProjects(projects) {
+    projectsContainer.innerHTML = projects.map(project => createProjectList(project)).join('');
+}
+
+function createProjectList(project) {
+    return `
+    <a href="${project.url}" class="project" target="blank" data-type="${project.type}">
+        <img src="${project.img}" alt="${project.name}" class="project__img">
+        <div class="project__description">
+            <h3>${project.name}</h3>
+            <span>${project.description}</span>
+        </div>
+    </a>
+    `;
+}
+
+function setEventListneres(projects) {
+    workBtnContainer.addEventListener("click", events => OnButtonClick(events, projects));
+}
+
+function OnButtonClick(event,projects) {
+    const filter = event.target.dataset.filter || event.target.parentNode.dataset.filter;
+    if (filter == null) {
+        return
+    }
     const active = document.querySelector('.category__btn.active');
     active.classList.remove('active');
-    const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+    const target = event.target.nodeName === 'BUTTON' ? event.target : event.target.parentNode;
     target.classList.add('active');
-
     projectsContainer.classList.add('animate-out');
     setTimeout(()=> {
-        projects.forEach((project) => {
-            if(filter === '*' || filter === project.dataset.type) {
-                project.classList.remove('invisible');
-            } else {
-                project.classList.add('invisible');
-            }
-        });
+        displayProjects(projects.filter(project => filter === '*' || filter === project.type));
         projectsContainer.classList.remove('animate-out');
     },300);
 
-
-});
+}
+loadProjects()
+    .then(projects => {
+        displayProjects(projects);
+        setEventListneres(projects);
+    })
+    .catch(console.log);
 
 const sectionIds = ['#home', '#about', '#skills','#work', '#testimonials', '#contact'];
 const navItems = sectionIds.map(id => document.querySelector(`[data-link="${id}"]`));
