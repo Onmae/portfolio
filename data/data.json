@@ -1,18 +1,39 @@
 {
     "projects": [
     {
-        "name" : "Cretube",
+        "name" : "PaintJS",
         "type" : "front-end",
-        "url" : "https://github.com/Onmae/Cretube",
-        "img" : "../imgs/avatar.jpg",
-        "description" : "Clone coding with HTML, CSS, JS, ..."
+        "url" : "https://github.com/Onmae/paintjs",
+        "img" : "../imgs/paintjs.png",
+        "description" : "Canvas with HTML, CSS, JS, ..."
+    },
+    {
+        "name" : "Kakaotalk-clone",
+        "type" : "front-end",
+        "url" : "https://github.com/Onmae/kakaotalk-clone",
+        "img" : "../imgs/kakao-talk.png",
+        "description" : "Clone coding with HTML, CSS"
+    },    
+    {
+        "name" : "shopping-sort",
+        "type" : "front-end",
+        "url" : "https://github.com/Onmae/shopping-sort",
+        "img" : "../imgs/shopping_game.png",
+        "description" : "Shopping game with JS"
+    },
+    {
+        "name" : "ToDoList",
+        "type" : "front-end",
+        "url" : "https://github.com/Onmae/js_basic",
+        "img" : "../imgs/Todo.png",
+        "description" : "TodoList with JS"
     },
     {
         "name" : "Cretube",
         "type" : "back-end",
-        "url" : "https://github.com/Onmae/Cretube",
+        "url" : "https://github.com/Onmae/Cretube/tree/ver-1.0",
         "img" : "../imgs/avatar.jpg",
-        "description" : "Clone coding with HTML, CSS, JS, ..."
+        "description" : "Clone coding with Express, Mongoose, Babel ..."
     }
     ]
 }
