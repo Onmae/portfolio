@@ -398,6 +398,7 @@ body {
   margin-top: 40px;
   display: flex;
   overflow: auto;
+  justify-content: space-around;
 }
 
 .person {
