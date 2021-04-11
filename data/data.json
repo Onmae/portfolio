@@ -53,7 +53,7 @@
         "name" : "CRUD",
         "type" : "back-end",
         "url" : "https://github.com/Onmae/CRUD_TEST",
-        "img" : "./imgs/none.png",
+        "img" : "./imgs/crud.png",
         "description" : "CRUD With Springboot"
     },
     {
