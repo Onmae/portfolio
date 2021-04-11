@@ -4,49 +4,49 @@
         "name" : "PaintJS",
         "type" : "front-end",
         "url" : "https://github.com/Onmae/paintjs",
-        "img" : "../imgs/paintjs.png",
+        "img" : "./../imgs/paintjs.png",
         "description" : "Canvas with HTML, CSS, JS, ..."
     },
     {
         "name" : "Kakaotalk-clone",
         "type" : "front-end",
         "url" : "https://github.com/Onmae/kakaotalk-clone",
-        "img" : "../imgs/kakao-talk.png",
+        "img" : "./../imgs/kakao-talk.png",
         "description" : "Clone coding with HTML, CSS"
     },    
     {
         "name" : "shopping-sort",
         "type" : "front-end",
         "url" : "https://github.com/Onmae/shopping-sort",
-        "img" : "../imgs/shopping_game.png",
+        "img" : "./../imgs/shopping_game.png",
         "description" : "Shopping game with JS"
     },
     {
         "name" : "ToDoList",
         "type" : "front-end",
         "url" : "https://github.com/Onmae/js_basic",
-        "img" : "../imgs/Todo.png",
+        "img" : "./../imgs/Todo.png",
         "description" : "Js basic Practice"
     },
     {
         "name" : "Kakao-music",
         "type" : "front-end",
         "url" : "https://replit.com/@gaonmae/WeLoveYouBlueprint-3#index.html",
-        "img" : "../imgs/kakao-music.png",
+        "img" : "./../imgs/kakao-music.png",
         "description" : "Css Practice"
     },
     {
         "name" : "Albamon crawler",
         "type" : "back-end",
         "url" : "https://replit.com/@gaonmae/Day-Eight-Blueprint#main.py",
-        "img" : "../imgs/albamon.png",
+        "img" : "./../imgs/albamon.png",
         "description" : "Albamon crawler with Python"
     },
     {
         "name" : "News crawler",
         "type" : "back-end",
         "url" : "https://replit.com/@gaonmae/Day-Nine-and-Ten-Blueprint#main.py",
-        "img" : "../imgs/News-crawler.png",
+        "img" : "./../imgs/News-crawler.png",
         "description" : "News crawler with Python"
     },
     
@@ -54,7 +54,7 @@
         "name" : "Cretube",
         "type" : "back-end",
         "url" : "https://github.com/Onmae/Cretube/tree/ver-1.0",
-        "img" : "../imgs/cretube.png",
+        "img" : "./../imgs/cretube.png",
         "description" : "Clone coding with Express, Mongoose, Babel ..."
     }
     ]
