@@ -4,7 +4,7 @@
         "name" : "PaintJS",
         "type" : "front-end",
         "url" : "https://github.com/Onmae/paintjs",
-        "img" : "../imgs/paintjs.png",
+        "img" : "./../imgs/paintjs.png",
         "description" : "Canvas with HTML, CSS, JS, ..."
     },
     {
